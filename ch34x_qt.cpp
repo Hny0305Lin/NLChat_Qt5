@@ -1,4 +1,4 @@
-#include "ch341_qt.h"
+#include "ch34x_qt.h"
 
 CH341Qt::CH341Qt(QObject *parent) : QObject(parent) {
     m_serialPort = new QSerialPort(this);

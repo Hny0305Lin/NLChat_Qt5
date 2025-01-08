@@ -18,7 +18,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     main.cpp \
     nlchatwindow.cpp \
-    ch341_qt.cpp \
+    ch34x_qt.cpp \
     serialmanager.cpp \
     serialsettingsdialog.cpp \
     chatbubblewidget.cpp \
@@ -26,8 +26,8 @@ SOURCES += \
     uilayoutmanager.cpp
 
 HEADERS += \
+    ch34x_qt.h \
     nlchatwindow.h \
-    ch341_qt.h \
     serialmanager.h \
     serialsettingsdialog.h \
     chatbubblewidget.h \

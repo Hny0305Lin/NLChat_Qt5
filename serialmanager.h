@@ -2,7 +2,7 @@
 #define SERIALMANAGER_H
 
 #include <QObject>
-#include "ch341_qt.h"
+#include "ch34x_qt.h"
 #include "serialsettingsdialog.h"
 
 class SerialManager : public QObject

@@ -1,0 +1,8 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/fonts">
+        <file>fonts/HarmonyOS_Sans_SC_Regular.ttf</file>
+        <file>fonts/HarmonyOS_Sans_SC_Medium.ttf</file>
+        <file>fonts/HarmonyOS_Sans_SC_Bold.ttf</file>
+    </qresource>
+</RCC> 

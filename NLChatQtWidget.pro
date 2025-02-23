@@ -23,7 +23,8 @@ SOURCES += \
     serialsettingsdialog.cpp \
     chatbubblewidget.cpp \
     messagelistwindow.cpp \
-    uilayoutmanager.cpp
+    uilayoutmanager.cpp \
+    serialcli.cpp
 
 HEADERS += \
     ch34x_qt.h \
@@ -32,7 +33,8 @@ HEADERS += \
     serialsettingsdialog.h \
     chatbubblewidget.h \
     messagelistwindow.h \
-    uilayoutmanager.h
+    uilayoutmanager.h \
+    serialcli.h
 
 FORMS += \
     nlchatwindow.ui

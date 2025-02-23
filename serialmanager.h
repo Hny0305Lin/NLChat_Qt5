@@ -32,7 +32,7 @@ private slots:
     void handlePortsChanged();
 
 private:
-    CH341Qt* m_serialDevice;
+    CH34xQt* m_serialDevice;
     SerialSettingsDialog::Settings m_currentSettings;
 };
 

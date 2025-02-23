@@ -2,13 +2,13 @@
 
 SerialManager::SerialManager(QObject *parent) : QObject(parent)
 {
-    m_serialDevice = new CH341Qt(this);
+    m_serialDevice = new CH34xQt(this);
 
-    connect(m_serialDevice, &CH341Qt::dataReceived, 
+    connect(m_serialDevice, &CH34xQt::dataReceived,
             this, &SerialManager::handleSerialData);
-    connect(m_serialDevice, &CH341Qt::errorOccurred,
+    connect(m_serialDevice, &CH34xQt::errorOccurred,
             this, &SerialManager::handleSerialError);
-    connect(m_serialDevice, &CH341Qt::portsChanged,
+    connect(m_serialDevice, &CH34xQt::portsChanged,
             this, &SerialManager::handlePortsChanged);
 }
 
@@ -47,7 +47,7 @@ bool SerialManager::sendData(const QString& message)
 
 QStringList SerialManager::getAvailablePorts() const
 {
-    return CH341Qt::availablePorts();
+    return CH34xQt::availablePorts();
 }
 
 void SerialManager::handleSerialData(const QByteArray& data)
